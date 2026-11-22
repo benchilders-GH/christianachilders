@@ -31,7 +31,7 @@
 <section class="split">
   <div class="half photo" style="--img:url(../images/CP-Parallex-01.jpg);--img-md:url(../images/CP-Parallex-01-md.jpg);--img-sm:url(../images/CP-Parallex-01-sm.jpg)" role="img" aria-label="Christiana Childers"></div>
   <div class="half panel panel-cyan contact">
-    <h1>Have a question for Christiana or would like a a quote for Pricing?</h1>
+    <h1>Have a question for Christiana?</h1>
     <p>Just fill in the information below and I will get right back to you!</p>
     <form id="contact-form" class="contact-form" action="https://formsubmit.co/christiana@christianachilders.com" method="POST">
       <input type="hidden" name="_subject" value="New message from christianachilders.com">
@@ -44,6 +44,8 @@
           <option value="">Select the type of session</option>
           <option>High School Senior Session</option>
           <option>Professional Headshots</option>
+          <option>Family Session</option>
+          <option>Newborn Session</option>
           <option>Something else</option>
         </select>
       </div>
@@ -97,7 +99,8 @@
         show('Thanks for contacting Christiana Childers Photography! We will be in touch with you shortly.', false);
       } else {
         btn.disabled = false; btn.textContent = 'Submit';
-        show('Sorry, your message could not be sent. Please try again, or email christiana@christianachilders.com directly.', true);
+        var why = res.data && res.data.message ? ' (' + res.data.message + ')' : '';
+        show('Sorry, your message could not be sent' + why + '. Please try again, or email christiana@christianachilders.com directly.', true);
       }
     }).catch(function () { form.submit(); });
   });
