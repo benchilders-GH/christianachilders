@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Christiana | Christiana Childers Photography</title>
+<meta name="description" content="Send a question to Seattle-area portrait photographer Christiana Childers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ovo&family=Roboto:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="site-header">
+  <a class="logo" href="index.html" aria-label="Christiana Childers Photography, home">
+    <picture>
+      <source media="(max-width: 1100px)" srcset="images/CCP-Logo-60-Update.png 1x, images/CCP-Logo-60-Update2x.png 2x">
+      <img src="images/CCP-Logo-80-Update.png" srcset="images/CCP-Logo-80-Update.png 1x, images/CCP-Logo-80-Update2x.png 2x" width="262" height="80" alt="Christiana Childers Photography | Seattle Bellevue Eastside Photographer">
+    </picture>
+  </a>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+  <label for="nav-toggle" class="burger" aria-hidden="true"><span></span><span></span><span></span></label>
+  <nav class="main-nav" aria-label="Main">
+    <ul><li><a href="index.html">Home</a></li><li><a href="senior-portraits.html">Senior Portraits</a></li><li><a href="headshots.html">Professional Headshots</a></li><li><a href="about.html">About Christiana</a></li></ul>
+    <ul class="social social-head"><li><a class="si si-fb" href="https://www.facebook.com/christianachildersphotography/" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M14 8h2V5h-2.5C10.9 5 10 6.6 10 8.5V10H8v3h2v7h3v-7h2.2l.5-3H13V8.7c0-.5.2-.7 1-.7z"/></svg></a></li><li><a class="si si-tw" href="https://twitter.com/christianaphoto" aria-label="X" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M4 4l7.2 9.6L4.3 20h1.6l6-5.5L16.4 20H20l-7.5-10L19.3 4h-1.6l-5.5 5-3.8-5H4z"/></svg></a></li><li><a class="si si-ig" href="https://www.instagram.com/christianachilders/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="16.3" cy="7.7" r="1"/></svg></a></li><li><a class="si si-li" href="https://www.linkedin.com/in/christiana-childers-32580aa2" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M5 9h3v10H5zM6.5 4.5a1.7 1.7 0 110 3.4 1.7 1.7 0 010-3.4zM10 9h2.9v1.4c.5-.9 1.6-1.6 3.1-1.6 3 0 3.5 2 3.5 4.5V19h-3v-5c0-1.2 0-2.5-1.6-2.5S13 12.8 13 14v5h-3z"/></svg></a></li></ul>
+  </nav>
+</header>
+<main id="content">
+
+<section class="split">
+  <div class="half photo" style="--img:url(../images/CP-Parallex-01.jpg);--img-md:url(../images/CP-Parallex-01-md.jpg);--img-sm:url(../images/CP-Parallex-01-sm.jpg)" role="img" aria-label="Christiana Childers"></div>
+  <div class="half panel panel-cyan contact">
+    <h1>Have a question for Christiana?</h1>
+    <p>Just fill in the information below and I will get right back to you!</p>
+    <form id="contact-form" class="contact-form" action="https://formsubmit.co/christiana@christianachilders.com" method="POST">
+      <input type="hidden" name="_subject" value="New message from christianachilders.com">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <p class="hp" aria-hidden="true"><label>Leave this field empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
+      <div class="field">
+        <label for="f-interest">What type of photography are you interested in?</label>
+        <select id="f-interest" name="interest">
+          <option value="">Select the type of session</option>
+          <option>High School Senior Session</option>
+          <option>Professional Headshots</option>
+          <option>Family Session</option>
+          <option>Newborn Session</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-name">Name <span class="req">(required)</span></label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="f-email">Email <span class="req">(required)</span></label>
+        <input id="f-email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div class="field">
+        <label for="f-message">How can I help? <span class="req">(required)</span></label>
+        <textarea id="f-message" name="message" rows="6" required></textarea>
+      </div>
+      <p class="btn-wrap"><button class="btn btn-white" type="submit">Submit</button></p>
+    </form>
+    <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <ul class="social social-foot"><li><a class="si si-fb" href="https://www.facebook.com/christianachildersphotography/" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M14 8h2V5h-2.5C10.9 5 10 6.6 10 8.5V10H8v3h2v7h3v-7h2.2l.5-3H13V8.7c0-.5.2-.7 1-.7z"/></svg></a></li><li><a class="si si-tw" href="https://twitter.com/christianaphoto" aria-label="X" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M4 4l7.2 9.6L4.3 20h1.6l6-5.5L16.4 20H20l-7.5-10L19.3 4h-1.6l-5.5 5-3.8-5H4z"/></svg></a></li><li><a class="si si-ig" href="https://www.instagram.com/christianachilders/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="16.3" cy="7.7" r="1"/></svg></a></li><li><a class="si si-li" href="https://www.linkedin.com/in/christiana-childers-32580aa2" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M5 9h3v10H5zM6.5 4.5a1.7 1.7 0 110 3.4 1.7 1.7 0 010-3.4zM10 9h2.9v1.4c.5-.9 1.6-1.6 3.1-1.6 3 0 3.5 2 3.5 4.5V19h-3v-5c0-1.2 0-2.5-1.6-2.5S13 12.8 13 14v5h-3z"/></svg></a></li></ul>
+  <p>&copy; Copyright 2012 &ndash; 2026 &nbsp;|&nbsp; Christiana Childers Photography &nbsp;|&nbsp; All Rights Reserved</p>
+</footer>
+<script>
+/* Sends the form without leaving the page. If the background request fails to run at all,
+   it falls back to a normal form submit so the message still goes through. */
+(function () {
+  var form = document.getElementById('contact-form');
+  var status = document.getElementById('form-status');
+  if (!form || !window.fetch) return;
+  function show(msg, isError) {
+    status.textContent = msg; status.hidden = false;
+    status.className = 'form-status' + (isError ? ' error' : '');
+    status.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!form.reportValidity()) return;
+    var btn = form.querySelector('button[type=submit]');
+    btn.disabled = true; btn.textContent = 'Sending\u2026'; status.hidden = true;
+    fetch(form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
+      method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(form)
+    }).then(function (r) {
+      return r.json().catch(function () { return {}; }).then(function (d) { return { ok: r.ok, data: d }; });
+    }).then(function (res) {
+      if (res.ok && String(res.data.success) === 'true') {
+        form.hidden = true;
+        show('Thanks for contacting Christiana Childers Photography! We will be in touch with you shortly.', false);
+      } else {
+        btn.disabled = false; btn.textContent = 'Submit';
+        show('Sorry, your message could not be sent. Please try again, or email christiana@christianachilders.com directly.', true);
+      }
+    }).catch(function () { form.submit(); });
+  });
+})();
+</script>
+</body>
+</html>
